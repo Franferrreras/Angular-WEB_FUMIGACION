@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+    <span>Ozono powerclean</span>
+    <span class="example-spacer"></span>
+    <nav class="nav">
+        <ul class="nav__links">
+            <li class="nav__item"><button class="nav__link" mat-button routerLink="/dashboard">Dashboard</button></li>
+            <li class="nav__item">
+                <button class="nav__link" mat-button>Servicios</button>
+                <ul class="nav__nesting">
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Desinsectación</button>
+                    </li>
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Desratización</button>
+                    </li>
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Desinfección</button>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <button class="nav__link" mat-button routerLink="/dashboard/usuarios">A.Actuación</button>
+                <ul class="nav__nesting">
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Viviendas</button>
+                    </li>
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Comercios</button>
+                    </li>
+                    <li class="nav__inside">
+                        <button class="nav__link menu__link--inside" mat-button routerLink="/dashboard">Hosteleria</button>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item"><button class="nav__link" mat-button routerLink="/dashboard/usuarios">Hoteles</button></li>
+        </ul>
+    </nav>
+    <!-- <button mat-button *ngFor="let i of menu" [routerLink]="i.redirect">{{i.nombre}}</button> -->
+    <!-- <button mat-button routerLink="/dashboard">Dashboard</button>
+    <button mat-button routerLink="/dashboard/usuarios">Usuarios</button>
+    <button mat-button routerLink="/dashboard/reportes">Reportes</button> -->
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon routerLink="/logout">logout</mat-icon>
+    </button>
+</mat-toolbar>
+<script src="navbar.component.js"></script>

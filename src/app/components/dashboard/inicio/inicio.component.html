@@ -1,0 +1,146 @@
+<div class="container-fluid p-0">
+    <!-- <mat-toolbar>
+        <span>Dashboard</span>
+    </mat-toolbar> -->
+    <div class="banner-container">
+        <!-- <div>
+            <div class="picture">
+                <img class="picture-background" src="./assets/img/portada3-edit.png">
+            </div>
+        </div> -->
+        <div class="webinar">
+            <div class="webinar-content">
+                <h1>¡Olvidate de las Plagas!</h1>
+                <p>Control de plagas en Sevilla</p>
+                <div class="phone">
+                    <mat-icon class="align-self-center" aria-hidden="false" fontIcon="phone"></mat-icon>
+                    <span>611 656 145</span>
+                </div>
+            </div>
+        </div>
+        <div class="formulario">
+            <h2>¿Prefieres que te llamemos?</h2>
+            <p class="formulario-dates">Dejanos tus datos y te contactaremos</p>
+            <div class="formulario-content">
+                <form action="http://localhost:8080/sendMail" method="post" (ngSubmit)="fakeLoading()">
+                    <div class="formulario-section">
+                        <mat-form-field appearance="fill">
+                            <label for="nombre">Nombre</label>
+                            <input matInput name="name" required>
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <label for="phone">Telefono</label>
+                            <mat-icon matSuffix>phone</mat-icon>
+                            <input matInput name="phone" required>
+                        </mat-form-field>
+                    </div>
+                    <mat-form-field class="ancho" appearance="fill">
+                        <label for="email">Email</label>
+                        <input type="email" matInput name="email" id="email" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="ancho" appearance="fill">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea matInput name="mensaje"></textarea>
+                    </mat-form-field> 
+                    <button class="formulario-button-send" mat-raised-button value="ENVIAR" color="primary">Enviar</button>
+                </form>
+                <!-- <form [formGroup]="dataClient">
+                    <div class="formulario-section">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Nombre</mat-label>
+                            <input matInput formControlName="name" name="name">
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Telefono</mat-label>
+                            <mat-icon matSuffix>phone</mat-icon>
+                            <input type="text" matInput formControlName="phone" name="phone">
+                        </mat-form-field>
+                    </div>
+                    <mat-form-field class="ancho" appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput formControlName="email" name="email">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="ancho" appearance="fill">
+                        <mat-label>Mensaje</mat-label>
+                        <textarea matInput formControlName="mensaje" name="mensaje"></textarea>
+                    </mat-form-field>
+                    <button class="formulario-button-send" mat-raised-button color="primary" (click)="sendMail()">Enviar</button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="wrap">
+        <h1 class="title">Fumigación de plagas en Sevilla</h1>
+        <div class="wrap-content">
+            <div class="wrap-item">
+                <div class="item">
+                    <a href="">
+                        <img src="./assets/img/hormiga.png" alt="">
+                        <h1>Desinsectación en Sevilla</h1>
+                        <p>La desinsectación es una técina de saneamiento dirigida a eliminar o controlar la población de insectos y otros artrópodos</p>
+                    </a>
+                </div>
+            </div>
+            <div class="wrap-item">
+                <div class="item">
+                    <a href="">
+                        <img src="./assets/img/silueta-de-rata (1).png">
+                        <h1>Desratización</h1>
+                        <p>La desratización se refiere a las acciones que se llevan a acabo para ehuyentar y eliminar las plagas de ratas y ratones del hogar, negocio etc...</p>
+                    </a>
+                </div>
+            </div>
+            <div class="wrap-item">
+                <div class="item">
+                    <a href="">
+                        <img src="./assets/img/germenes.png">
+                        <h1>Desinfección</h1>
+                        <p>Procedimiento en el que usamos técnicas físicas o químicas para eleminar, matar, inactivas o inhibir a un gran número de microorganismos encontrados en el ambiente </p>
+                    </a>
+                </div>
+            </div>
+            <div class="wrap-item">
+                <div class="item">
+                    <a href="">
+                        <img src="./assets/img/termita (1).png">
+                        <h1>Tratamineto de la madera</h1>
+                        <p>Consiste en la aplicación de productos insecticidas y fungicidas que se aplican a la madera, protegiendola de insectos xylófagos (polillas, terminas y carcomas), hogos y azulado.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sectors">
+        <h1 class="title">Areas de Actuación</h1>
+        <div class="sectors-inner">
+            <div class="sectors-item">
+                <h4>Viviendas</h4>
+                <a href="">
+                    <img src="./assets/img/casa.jpg" alt="">
+                </a>
+            </div>
+            <div class="sectors-item">
+                <h4>Comercios</h4>
+                <a href="">
+                    <img src="./assets/img/comercio.jpg" alt="">
+                </a>
+            </div>
+            <div class="sectors-item">
+                <h4>Hosteleria</h4>
+                <a href="">
+                    <img src="./assets/img/hosteleria.jpg" alt="">
+                </a>
+            </div>
+            <div class="sectors-item">
+                <h4>Hoteles</h4>
+                <a href="">
+                    <img src="./assets/img/hotel2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <app-servicios></app-servicios>
+    <app-sectores></app-sectores>
+</div>

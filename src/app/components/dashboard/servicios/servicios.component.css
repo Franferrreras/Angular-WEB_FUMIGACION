@@ -1,0 +1,106 @@
+.wrap {
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    text-align: center;
+    color: #55514a;
+    background-color: #fff;
+    z-index: 20;
+}
+
+/*_____Ya estaba comentado
+
+/* .wrap h1 {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #74b474;
+}
+
+.wrap h1::after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 15px;
+    height: 2px;
+    width: 50px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #7a7673;
+} */
+/*______________Comentado______*/
+
+
+.wrap-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a {
+    height: 10em;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    color: #5c5a57;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+
+.wrap-item {
+    padding: 15px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin: 10px;
+    transition: .3s;
+}
+
+.wrap-item:hover {
+    transform: scale(1.005);
+    box-shadow: 3px 3px 4px #bdbabad5;
+    cursor: pointer;
+}
+
+.item {
+    padding: 1em;
+}
+
+.item img {
+    width: 30%;
+}
+
+.item h1 {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #74b474;
+    line-height: 1.1;
+}
+
+.item h1::after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 8px;
+    height: 2px;
+    width: 50px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #7a7673;
+}
+
+.item p {
+    text-align: justify;
+}
+

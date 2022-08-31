@@ -1,0 +1,51 @@
+img {
+    width: 100%;
+}
+
+.sectors {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.sectors-inner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sectors-item {
+    margin: 5px;
+    width: 40%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sectors-item h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #74b474;
+    line-height: 1.1;
+}
+
+.sectors-item h4::after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 8px;
+    height: 2px;
+    width: 50px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #7a7673;
+}
+
+/*Efecto de Zoom */
+.sectors-item:hover {
+    transform: scale(1.02);
+}
