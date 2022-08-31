@@ -121,7 +121,7 @@ mat-icon {
 
 
 /*_________________SERVICIOS______________*/
-/* .wrap {
+.wrap {
     width: 95%;
     margin: 0 auto;
     padding: 40px 0px;
@@ -200,12 +200,12 @@ a {
 .item p {
     text-align: justify;
 }
- */
+
 
 
 /*_______________SECTORES_____________*/
 
-/* img {
+img {
     width: 100%;
 }
 
@@ -250,9 +250,9 @@ a {
     margin: auto;
     border-radius: 2px;
     background-color: #7a7673;
-} */
+}
 
 /*Efecto de Zoom */
-/* .sectors-item:hover {
+.sectors-item:hover {
     transform: scale(1.02);
-} */
+}
